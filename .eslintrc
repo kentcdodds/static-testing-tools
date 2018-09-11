@@ -1,0 +1,14 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "valid-typeof": "error",
+    "no-negated-in-lhs": "error",
+    "no-unused-vars": "error",
+    "no-template-curly-in-string": "error",
+    "no-undef": "error",
+    "no-unexpected-multiline": "error"
+  },
+  "env": {
+    "browser": true
+  }
+}
