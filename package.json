@@ -9,7 +9,7 @@
     "format": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
     "validate": "npm run lint && npm run prettier -- --list-different && npm run flow",
-    "precommit": "npm run validate"
+    "precommit": "lint-staged && npm run flow"
   },
   "keywords": [],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
@@ -20,6 +20,7 @@
     "eslint-config-prettier": "^3.0.1",
     "flow-bin": "^0.81.0",
     "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
     "prettier": "^1.14.2"
   }
 }
