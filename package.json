@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint src",
     "flow": "flow",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged && flow"
   },
   "keywords": [],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
