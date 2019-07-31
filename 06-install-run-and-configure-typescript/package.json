@@ -4,17 +4,18 @@
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "GPLv3",
   "scripts": {
-    "lint": "eslint src",
-    "flow": "flow",
+    "lint": "eslint --ext .js,.ts,.tsx .",
+    "check-types": "tsc",
     "format": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.+(js|json|ts|tsx|md)\"",
-    "validate": "npm run lint && npm run prettier -- --list-different && npm run flow"
+    "validate": "npm run lint && npm run prettier -- --list-different && check-types"
   },
   "devDependencies": {
-    "babel-eslint": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
-    "flow-bin": "^0.81.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
   }
 }

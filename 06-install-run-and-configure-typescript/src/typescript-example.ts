@@ -1,14 +1,16 @@
-// @flow
+const username = 'freddy'
+typeof username === 'string'
+
 function add(a: number, b: number): number {
   return a + b
 }
 
 type User = {
   name: {
-    first: string,
-    middle: string,
-    last: string,
-  },
+    first: string
+    middle: string
+    last: string
+  }
 }
 function getFullName(user: User): string {
   const {

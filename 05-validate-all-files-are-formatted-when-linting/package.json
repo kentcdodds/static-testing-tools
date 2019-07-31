@@ -4,7 +4,7 @@
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "GPLv3",
   "scripts": {
-    "lint": "eslint src",
+    "lint": "eslint .",
     "format": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.+(js|json|ts|tsx|md)\"",
     "validate": "npm run lint && npm run prettier -- --list-different"

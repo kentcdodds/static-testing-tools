@@ -4,7 +4,7 @@
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "GPLv3",
   "scripts": {
-    "lint": "eslint src",
+    "lint": "eslint .",
     "format": "prettier --write \"**/*.+(js|json|ts|tsx|md)\""
   },
   "devDependencies": {
