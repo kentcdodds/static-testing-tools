@@ -5,7 +5,7 @@
   "license": "GPLv3",
   "scripts": {
     "lint": "eslint src",
-    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\""
+    "format": "prettier --write \"**/*.+(js|json|ts|tsx|md)\""
   },
   "devDependencies": {
     "eslint": "^6.1.0",
