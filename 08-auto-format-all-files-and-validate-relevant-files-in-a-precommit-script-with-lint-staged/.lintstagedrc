@@ -2,7 +2,7 @@
   "*.js": [
     "eslint"
   ],
-  "*.+(js|json|ts|tsx|md)": [
+  "*.+(js|json|ts)": [
     "prettier --write",
     "git add"
   ]

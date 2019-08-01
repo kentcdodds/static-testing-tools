@@ -8,8 +8,7 @@
     "check-types": "tsc",
     "format": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.+(js|json|ts)\"",
-    "validate": "npm run lint && npm run prettier -- --list-different && npm run check-types",
-    "precommit": "npm run validate"
+    "validate": "npm run lint && npm run prettier -- --list-different && npm run check-types"
   },
   "devDependencies": {
     "babel-eslint": "11.0.0-beta.0",
@@ -18,5 +17,10 @@
     "husky": "^3.0.2",
     "prettier": "^1.18.2",
     "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run validate"
+    }
   }
 }
