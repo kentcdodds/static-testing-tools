@@ -10,7 +10,7 @@
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|ts|tsx)\"",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
-    "validate": "npm run check-types && npm run check-format && npm run lint && npm run build"
+    "validate": "npm-run-all --parallel check-types check-format lint build"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
@@ -23,6 +23,7 @@
     "eslint-config-prettier": "^6.5.0",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
     "typescript": "^3.7.2"
   }
