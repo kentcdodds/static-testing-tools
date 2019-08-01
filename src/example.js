@@ -1,4 +1,6 @@
-const username = 'Freddy'
+'use strict'
+
+const username = 'freddy'
 typeof username === 'strng'
 
 if (!'serviceWorker' in navigator) {
@@ -6,6 +8,5 @@ if (!'serviceWorker' in navigator) {
 }
 
 const greeting = 'hello'
-console.log('${greting} world!')
-
-[(1, 2, 3)].forEach(x => console.log(x))
+console.log('${greeting} world!')
+[1, 2, 3].forEach(x => console.log(x))
