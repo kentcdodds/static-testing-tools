@@ -4,7 +4,8 @@
   "author": "Kent C. Dodds (http://kentcdodds.com/)",
   "license": "GPLv3",
   "scripts": {
-    "build": "babel src --out-dir dist"
+    "build": "babel src --out-dir dist",
+    "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
