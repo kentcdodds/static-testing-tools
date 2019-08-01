@@ -7,8 +7,8 @@
     "lint": "eslint .",
     "check-types": "tsc",
     "format": "npm run prettier -- --write",
-    "prettier": "prettier \"**/*.+(js|json|ts|tsx|md)\"",
-    "validate": "npm run lint && npm run prettier -- --list-different && check-types",
+    "prettier": "prettier \"**/*.+(js|json|ts)\"",
+    "validate": "npm run lint && npm run prettier -- --list-different && npm run check-types",
     "precommit": "npm run validate"
   },
   "devDependencies": {

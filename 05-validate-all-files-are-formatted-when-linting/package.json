@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "format": "npm run prettier -- --write",
-    "prettier": "prettier \"**/*.+(js|json|ts|tsx|md)\"",
+    "prettier": "prettier \"**/*.+(js|json)\"",
     "validate": "npm run lint && npm run prettier -- --list-different"
   },
   "devDependencies": {

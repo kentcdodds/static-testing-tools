@@ -7,8 +7,8 @@
     "lint": "eslint .",
     "check-types": "tsc",
     "format": "npm run prettier -- --write",
-    "prettier": "prettier \"**/*.+(js|json|ts|tsx|md)\"",
-    "validate": "npm run lint && npm run prettier -- --list-different && check-types"
+    "prettier": "prettier \"**/*.+(js|json|ts)\"",
+    "validate": "npm run lint && npm run prettier -- --list-different && npm run check-types"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
@@ -21,7 +21,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && check-types"
+      "pre-commit": "lint-staged && npm run check-types"
     }
   }
 }
