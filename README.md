@@ -1,5 +1,5 @@
 <h1 align="center">
-  Static Testing Tools
+  <a href="https://testingjavascript.com/courses/static-analysis-testing-javascript-applications-71c1">Static Testing Tools</a>
 </h1>
 
 <div align="center">
