@@ -1,9 +1,9 @@
 {
   "*.+(js|ts|tsx)": [
-    "eslint"
+    "npm run lint"
   ],
   "*.+(js|json|ts|tsx)": [
-    "prettier --write",
+    "npm run format",
     "git add"
   ]
 }
