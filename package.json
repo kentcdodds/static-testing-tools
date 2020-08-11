@@ -5,12 +5,12 @@
   "license": "GPLv3",
   "scripts": {
     "build": "babel src --extensions .js,.ts,.tsx --out-dir dist",
-    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx",
     "check-types": "tsc",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|ts|tsx)\"",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
-    "validate": "npm run check-types && npm run check-format && npm run lint && npm run build"
+    "validate": "npm run check-types && npm run check-format && npm run lint -- . && npm run build"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
